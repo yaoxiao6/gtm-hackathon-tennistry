@@ -1,0 +1,18 @@
+# Dependencies
+node_modules/
+
+# OS
+.DS_Store
+
+# Secrets / local runtime state
+hypit_token.pw
+*.pw
+.env
+.hypit/
+
+# Over GitHub's 100 MB file limit
+Tennistry/Demo Video.mp4
+
+# Raw downloaded source footage and scratch copies
+/DN0PIfW2j9k*.mp4
+/zip/

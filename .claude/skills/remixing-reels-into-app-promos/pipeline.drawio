@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="drawio" version="26.0.0">
+  <diagram name="Reel to App Promo">
+    <mxGraphModel dx="1600" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1560" pageHeight="760" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <mxCell id="title" value="&lt;b&gt;From an Instagram reel to an app promo video&lt;/b&gt;" style="text;html=1;align=left;verticalAlign=middle;fontSize=24;fontColor=#1C1D20;" vertex="1" parent="1">
+          <mxGeometry x="40" y="10" width="900" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="in-link" value="&lt;b&gt;Instagram reel link&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;fillColor=#f5f5f5;strokeColor=#888888;fontColor=#333333;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="40" y="80" width="190" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="in-token" value="&lt;b&gt;HypiHub token&lt;/b&gt;&lt;br&gt;(file, never shown)" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;fillColor=#f5f5f5;strokeColor=#888888;fontColor=#333333;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="540" y="80" width="190" height="56" as="geometry" />
+        </mxCell>
+
+        <mxCell id="s1" value="&lt;b&gt;1. Download&lt;/b&gt;&lt;br&gt;yt-dlp" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="40" y="220" width="190" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="s2" value="&lt;b&gt;2. Fix the format&lt;/b&gt;&lt;br&gt;ffmpeg: VP9 → H.264&lt;br&gt;&lt;i&gt;(else: sound, no picture)&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="290" y="220" width="190" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="s3" value="&lt;b&gt;3. Swap the people&lt;/b&gt;&lt;br&gt;hypit + Seedance 2.5&lt;br&gt;&lt;i&gt;paid · ask before running&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="540" y="220" width="190" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="s4" value="&lt;b&gt;4. Put the sound back&lt;/b&gt;&lt;br&gt;ffmpeg: original audio" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="790" y="220" width="190" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="s6" value="&lt;b&gt;6. Join the two&lt;/b&gt;&lt;br&gt;ffmpeg: same size,&lt;br&gt;30fps, then concat" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="220" width="190" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="final" value="&lt;b&gt;Final promo&lt;/b&gt;&lt;br&gt;15 s · 1080×1920&lt;br&gt;reel + end card" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEF5A6;strokeColor=#8a9a1b;fontSize=15;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1290" y="220" width="210" height="90" as="geometry" />
+        </mxCell>
+
+        <mxCell id="in-icon" value="&lt;b&gt;App icon + brand brief&lt;/b&gt;&lt;br&gt;(facts, stats, store)" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;fillColor=#f5f5f5;strokeColor=#888888;fontColor=#333333;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="540" y="420" width="190" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="s5" value="&lt;b&gt;5. Build the end card&lt;/b&gt;&lt;br&gt;Remotion · 6 s&lt;br&gt;Logo → Download → Subscribe" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="790" y="410" width="190" height="90" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e-link" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;strokeColor=#888888;" edge="1" parent="1" source="in-link" target="s1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-token" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;strokeColor=#888888;" edge="1" parent="1" source="in-token" target="s3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="s1" target="s2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="s2" target="s3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="s3" target="s4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e46" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="s4" target="s6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6f" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="s6" target="final">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-icon" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;strokeColor=#888888;" edge="1" parent="1" source="in-icon" target="s5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e56" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="s5" target="s6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="check" value="&lt;b&gt;After every step:&lt;/b&gt; look at a grid of frames before moving on." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#bbbbbb;fontSize=14;align=left;spacingLeft=12;" vertex="1" parent="1">
+          <mxGeometry x="40" y="580" width="680" height="44" as="geometry" />
+        </mxCell>
+
+        <mxCell id="lg-title" value="&lt;b&gt;Key&lt;/b&gt;" style="text;html=1;align=left;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="40" y="650" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lg-in" value="Input you supply" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;fillColor=#f5f5f5;strokeColor=#888888;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="100" y="650" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lg-free" value="Free local step" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="245" y="650" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lg-paid" value="Paid AI step" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="390" y="650" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lg-design" value="Design step" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="535" y="650" width="130" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

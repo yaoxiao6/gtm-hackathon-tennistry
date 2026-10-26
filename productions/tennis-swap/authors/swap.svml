@@ -1,0 +1,29 @@
+<?svml using="@hypit/markup@1"?>
+<svml>
+  <import as="media" from="@hypit/media@1"/>
+  <import as="text" from="@hypit/text@1"/>
+  <import as="seedance" from="@hypit/seedance@1"/>
+
+  <media:Video id="source" src="../../../DN0PIfW2j9k_h264.mp4"/>
+
+  <text:Value id="direction">
+    Edit this video. Keep the camera position, framing, sunset light, clay court, sea, palm trees,
+    fence, the white "THERAPY." text at the top, the ball and every movement and swing exactly as
+    they are. Change only the two players.
+
+    The foreground player seen from behind becomes a young woman, still seen from behind with the
+    same footwork, stance and racket swings. She has a slim athletic build, long dark hair in a
+    high ponytail coming out of the back of a white cap, a fitted navy tennis top, a white pleated
+    tennis skirt, white socks and white-and-red tennis shoes. Her bare arms and legs move exactly
+    where the original player's arms and legs move.
+
+    The player at the far baseline becomes a beautiful young East Asian woman with long black hair
+    in a ponytail, wearing a white tennis dress, playing the same rally from the same spot. She
+    stays small in the distance, as in the original.
+  </text:Value>
+
+  <seedance:ReferenceVideo id="edit" model="2.5" prompt={direction}
+    duration="-1" aspect-ratio="adaptive" resolution="480p">
+    <seedance:Reference video={source} person-reference="true"/>
+  </seedance:ReferenceVideo>
+</svml>

@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "@hypit/hypit": "^0.3.1"
+  },
+  "name": "tennis-try",
+  "private": true,
+  "type": "module",
+  "hypit": {
+    "project": true
+  }
+}
